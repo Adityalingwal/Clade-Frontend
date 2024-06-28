@@ -72,9 +72,9 @@ export default function Home() {
           <div className="flex w-fit flex-col items-start text-xs  mb-4 ">
             <p className='font-semibold text-gray-500'>Skills Required </p>
             {job.skillsRequired.map((skill, index) => (
-              <div key={index} className="flex items-center mt-1 space-x-2 text-gray-800 rounded-lg px-2 py-1 text-[0.50rem] border border-solid border-gray-600 outline-gray-600">
+              <div key={index} className="flex items-center p-0.5 font-bold text-gray-800 rounded-lg text-[0.50rem] border border-gray-200 outline-gray-600">
                 <img src={skill.logo} alt={skill.name} className="h-4 w-4" />
-                <span>{skill.name}</span>
+                <span className='pl-0.5'>{skill.name}</span>
               </div>
             ))}
           </div>
